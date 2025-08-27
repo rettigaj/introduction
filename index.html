@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Andrew Rettig — Professor • Internet of Things</title>
+  <meta name="description" content="Professor introduction page for Andrew Rettig, full-time IT faculty at Sinclair College and IoT program lead." />
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121a33;
+      --text: #e7eaf3;
+      --muted: #aeb7d0;
+      --accent: #8ad3ff;
+      --accent-2: #b5ffbc;
+      --maxw: 72ch;
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    [data-theme="light"] {
+      --bg: #f6f7fb;
+      --panel: #ffffff;
+      --text: #111827;
+      --muted: #4b5563;
+      --accent: #0077ff;
+      --accent-2: #0ea5e9;
+      --shadow: 0 10px 30px rgba(0,0,0,.08);
+    }
+    html, body { height: 100%; scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 600px at 15% -10%, rgba(138,211,255,0.12), transparent 60%),
+                  radial-gradient(900px 400px at 110% 10%, rgba(181,255,188,0.10), transparent 60%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 32px 20px 80px; }
+    .card {
+      background: linear-gradient(180deg, var(--panel), color-mix(in srgb, var(--panel) 92%, black 8%));
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 28px;
+      border: 1px solid color-mix(in srgb, var(--panel) 86%, white 14%);
+    }
+    header.hero { display: grid; grid-template-columns: auto 1fr; gap: 22px; align-items: center; }
+    .avatar {
+      width: 92px; height: 92px; border-radius: 50%; display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #08111f; font-weight: 800; font-size: 28px;
+      box-shadow: 0 6px 24px rgba(0,0,0,.25);
+      user-select: none;
+    }
+    h1 { font-size: clamp(1.6rem, 1.2rem + 1.6vw, 2.2rem); line-height: 1.2; margin: 0 0 4px; }
+    .tagline { margin: 2px 0 8px; color: var(--muted); font-weight: 500; }
+    .quick a { display: inline-flex; gap: 8px; align-items: center; text-decoration: none; padding: 8px 12px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--panel) 78%, white 22%); color: var(--text); }
+    .quick a:hover { background: color-mix(in srgb, var(--panel) 90%, white 10%); }
+    .quick { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+
+    h2 { font-size: 1.15rem; letter-spacing: .3px; margin: 4px 0 10px; }
+    section { margin-top: 20px; }
+    p { margin: 0 0 12px; }
+
+    .highlights { display: grid; gap: 10px; }
+    .pill { display: inline-block; padding: 6px 10px; border-radius: 999px; border: 1px dashed color-mix(in srgb, var(--panel) 70%, white 30%); font-size: .94rem; }
+
+    .sig { margin-top: 8px; font-weight: 600; }
+
+    .footer { text-align: center; margin-top: 28px; color: var(--muted); font-size: .9rem; }
+
+    .toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+    .toggle { appearance: none; border: 1px solid color-mix(in srgb, var(--panel) 78%, white 22%); padding: 7px 12px; border-radius: 10px; cursor: pointer; background: transparent; color: var(--text); }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    .skip { position: absolute; left: -9999px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip:focus { position: static; width: auto; height: auto; padding: 8px 12px; border-radius: 8px; background: var(--panel); }
+
+    @media (max-width: 580px) {
+      header.hero { grid-template-columns: 1fr; }
+      .avatar { width: 80px; height: 80px; font-size: 24px; }
+    }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip">Skip to content</a>
+  <div class="wrap">
+    <div class="toolbar">
+      <span aria-hidden="true">📘</span>
+      <button id="themeToggle" class="toggle" aria-pressed="false" aria-label="Toggle light/dark">Toggle theme</button>
+    </div>
+
+    <header class="hero card" role="banner">
+      <div class="avatar" aria-hidden="true">AR</div>
+      <div>
+        <h1>Andrew Rettig</h1>
+        <div class="tagline">Full-time Faculty, Information Technology — Sinclair College • Internet of Things (IoT)</div>
+        <nav class="quick" aria-label="Quick links">
+          <a href="#about">About</a>
+          <a href="#book">Book</a>
+          <a href="#ventures">Lil Data Monster</a>
+          <a href="#hobbies">Hobbies</a>
+          <a href="#sports">Sports</a>
+          <a href="#quote">Quote</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" aria-label="Main content">
+      <section id="about" class="card">
+        <h2>About</h2>
+        <p>
+          A little bit about me: I am a full-time faculty member in the IT department at Sinclair College. I am excited to be designing and launching the nation's leading Internet of Things bachelor’s degree. Our personalized degree is led by a team of business IoT visionaries.
+        </p>
+        <p>
+          Our classes leverage our internal ethos and degree motto, creating a foundation of tools and methods that work across verticals. Students learn organically—finding their confidence and passion to create their future.
+        </p>
+        <p>
+          I have been teaching IoT since 2015 and strive to demo everything while almost always using open-source software and hardware.
+        </p>
+      </section>
+
+      <section id="book" class="card">
+        <h2>Book</h2>
+        <p>
+          My book, <em>Introduction to IoT in a Cyberpunk Universe</em>, was published in 2024.
+        </p>
+        <div class="highlights">
+          <span class="pill">100% Video Textbook</span>
+          <span class="pill">lildatamonster.kotobee.com</span>
+        </div>
+      </section>
+
+      <section id="ventures" class="card">
+        <h2>Venture</h2>
+        <p>
+          I am the founder of my second IoT company, <a href="https://lildata.monster" target="_blank" rel="noopener">Lil Data Monster</a>, which focuses on system integration and machine learning. <strong>Tame those data monsters!</strong>
+        </p>
+      </section>
+
+      <section id="hobbies" class="card">
+        <h2>Hobbies</h2>
+        <div class="highlights">
+          <span class="pill">🎿 Skiing</span>
+          <span class="pill">🏄 Surfing</span>
+          <span class="pill">🎲 Board Games</span>
+        </div>
+      </section>
+
+      <section id="sports" class="card">
+        <h2>Favorite Sports Teams</h2>
+        <div class="highlights">
+          <span class="pill">🏈 Cincinnati Bengals</span>
+          <span class="pill">⚾ Cincinnati Reds</span>
+        </div>
+      </section>
+
+      <section id="quote" class="card">
+        <h2>Favorite Quote</h2>
+        <blockquote>
+          “What is possible is done, what is impossible will be done.”<br/>
+          — Evel Knievel
+        </blockquote>
+      </section>
+
+      <section id="contact" class="card">
+        <h2>Contact</h2>
+        <p>📞 Phone: <a href="tel:19375122656">937-512-2656</a></p>
+        <p>🏢 Office: Room 5136</p>
+        <p>💻 Zoom: <a href="https://sinclair.zoom.us/j/6232750726" target="_blank" rel="noopener">Online Office Link</a></p>
+      </section>
+
+      <section id="fast-facts" class="card" aria-label="Fast facts">
+        <h2>Fast Facts</h2>
+        <div class="highlights">
+          <span class="pill">Teaching IoT since 2015</span>
+          <span class="pill">Demo-driven classes</span>
+          <span class="pill">Open-source software & hardware</span>
+          <span class="pill">Student-centered learning</span>
+        </div>
+      </section>
+
+      <section class="card" aria-label="Signature">
+        <p class="sig">Best,<br/>Andrew Rettig</p>
+      </section>
+
+      <div class="footer" role="contentinfo">
+        <p>© <span id="year"></span> Andrew Rettig • This page uses no external libraries and is accessible and responsive.</p>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    (function() {
+      const btn = document.getElementById('themeToggle');
+      const saved = localStorage.getItem('ar-theme');
+      if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
+      btn.setAttribute('aria-pressed', saved === 'light' ? 'true' : 'false');
+      btn.addEventListener('click', () => {
+        const isLight = document.documentElement.getAttribute('data-theme') === 'light';
+        document.documentElement.setAttribute('data-theme', isLight ? 'dark' : 'light');
+        localStorage.setItem('ar-theme', isLight ? 'dark' : 'light');
+        btn.setAttribute('aria-pressed', (!isLight).toString());
+      });
+    })();
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
